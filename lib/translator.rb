@@ -20,7 +20,11 @@ def load_library(the_file_path)
         ";)" => "(^_-)",
         ":'(" => "(Ｔ▽Ｔ)",
         ":$" => "(#^.^#)",
+<<<<<<< HEAD
         ":)" => "(＾ｖ＾)"
+=======
+        ":)" => "（＾ｖ＾）"
+>>>>>>> 1dbbed0928595ec58554f3a85a0973504e98cad9
       }
    
   }
@@ -37,6 +41,7 @@ def get_japanese_emoticon(the_file_path, emoticon)
 end
 
 def get_english_meaning(the_file_path, emoticon)
+<<<<<<< HEAD
   hash = load_library(the_file_path)
   if hash[:get_meaning][emoticon]
     hash[:get_meaning][emoticon]
@@ -45,3 +50,13 @@ def get_english_meaning(the_file_path, emoticon)
   end
 end 
 learn
+=======
+  load_library(the_file_path)
+  hash = load_library(the_file_path)
+  if hash [:get_meaning][emoticon]
+    hash[:get_meaning][emoticon]
+  else 
+    "Sorry, that emoticon was not found"
+   end
+end 
+>>>>>>> 1dbbed0928595ec58554f3a85a0973504e98cad9
